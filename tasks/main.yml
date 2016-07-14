@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+- name: Install Postfix
+  action: apt pkg=postfix state=installed
+
+- name: Install Postfix
+  action: apt pkg=mailutils state=installed
+
+>>>>>>> develop
 - name: Copy debconf selections so that Postfix can configure itself non-interactively
   template: src=postfix_selections.j2  dest=/tmp/postfix_selections
 
